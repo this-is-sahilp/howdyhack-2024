@@ -1,0 +1,82 @@
+CSCE 181 – Introduction to Computing
+Fall 2024, Section 599
+Location/Time: Synchronous Online on ZOOM every Tuesday* 12:45pm - 2:00pm Central Time.
+* NOTE: We will only meet on Thursdays as EXCEPTION. In every such exception, a 1+ week advance
+notice will be provided.
+Class Web Page: https://canvas.tamu.edu/courses/322540
+Teaching Staff:
+• Instructor
+– Aakash Tyagi
+– Office Hours over ZOOM: By appointment
+• E-Mail: tyagi@tamu.edu
+Course Objectives:
+The objectives of this course are to inform students about the field of Computer Science and
+Engineering, and to introduce them to the wide range of exciting applications of computation and
+technology in society. Important terms and concepts in the field will be introduced, as a preview to
+what will be learned in other courses. We will explain the motivation for various aspects of our
+majors, including the core course sequence in our curriculum, math requirements, supporting
+area, co-ops, etc. We will also discuss practical issues that are faced by Software Engineers
+(abstraction, test and verification, ethics). Invited speakers will give guest lectures on current
+topics which will be used to give students an overview of different areas within the broad field of
+Computing.
+Course Structure:
+The course lecture content will be deployed in the form of seminar presentations associated with
+the above stated objectives.
+Student Outcomes:
+At the completion of this course, students will be able to:
+• explain how computation influences many aspects of our technological society.
+• explain how computer science is about algorithms, not just programming.
+• be familiar with important terms and concepts in the field.
+• understand the rationale for the sequence of courses required of our majors.
+• understand different aspects of being a software engineer.Prerequisites: None
+Grading: Course grade is based on attendance and quiz components.
+• Total 14 sessions
+• For each session, we log seminar attendance on ZOOM + a follow-on quiz on Canvas.
+– The quiz, based on the session content, will be released online on Canvas every Wednesday
+morning. It must be completed by 11:59pm on Friday.
+– Two attempts will be provided for the quiz and the highest score will be taken. A score of
+70% or higher is considered passing.
+• For each session j, a PASS is recorded if (Attendance == TRUE && Quiz Grade == PASS)
+j j
+• The course grading scale is A >= 85% > B >= 75% > C >= 65% > D >= 55% > F.
+– Translated to # of recorded PASS (requirement will not change if we end up having more
+than 14 sessions)
+• A: # of PASSES ≥ 12
+• B: 12 > # of PASSES ≥ 10
+• C: 10 > # of PASSES ≥ 8
+• Example: If a student attended 12 sessions and scored 70% or higher in 11/12 session quizzes,
+then their course grade is B because they recorded a PASS in 11 sessions.
+Optional Textbooks:
+• Understanding the Digital World, Brian W. Kernighan, Princeton University Press, 2017.
+• Great Ideas in Computer Science, A Gentle Introduction, Alan W. Biermann, MIT Press,
+1997.
+Attendance Policy: Grade depends on attendance (stated above).
+Communication: A class web page (listed at the top of this syllabus) will be maintained throughout the
+semester. Students are responsible for checking the announcements regularly for class updates.
+Academic Honesty: The Aggie Honor Code is: “An Aggie does not lie, cheat, or steal or tolerate those
+who do.” Upon accepting admission to Texas A&M University, a student immediately assumes a
+commitment to uphold the Honor Code, to accept responsibility for learning, and to follow the
+philosophy and rules of the Honor System. For additional information please visit:
+www.tamu.edu/aggiehonor/
+For this course, the honor code will be upheld as follows: Students are expected to adhere to the honor
+code when recording their attendance and taking the online quiz.
+ADA Statement: The Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that
+provides comprehensive civil rights protection for persons with disabilities. Among other things, this
+legislation requires that all students with disabilities be guaranteed a learning environment that
+provides for reasonable accommodation of their disabilities. If you believe you have a disabilityrequiring an accommodation, please contact the Disability Services building at the Student Services at
+White Creek complex on west campus or call 979-845-1637. For additional information, visit
+http://disability.tamu.edu.
+Links:
+• TAMU CSE Department wiki - information about accounts, labs, web page hosting, VPN,
+free software, etc.
+• Honors for info, email: honors@cse.tamu.edu
+• TACS - Texas A&M Computing Society, chapters of ACM and IEEE
+• TAGD - TAMU Game Developers organization
+• ACC – Aggie Coding Club
+• TAMU-UPE - Upsilon Pi Epsilon - International Honors Society for the Computing and
+Information Disciplines
+• TAMU Cybersec – TAMU Cybersecurity Club
+• AWICS - Aggie Women in Computer Science
+Acknowledgment:
+Professors John Keyser, Thomas Ioerger, and Scott Schaefer for their foundational efforts in
+establishing this course for our past students.
