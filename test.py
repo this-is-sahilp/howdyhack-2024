@@ -209,6 +209,6 @@ date("outputs/input.txt", "Math 151", 546)
 # count pdfs in the pdf directory and create an array of them
 # c
 
-arr[0][3]
+
 
 # on recieve 
