@@ -15,8 +15,9 @@ export default function Topbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar 
-        position="static"
         sx = {{
+            position:"sticky",
+            top:0,
             color: "floralwhite",
             bgcolor: "maroon",
             height: 80

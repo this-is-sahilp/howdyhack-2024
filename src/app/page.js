@@ -22,16 +22,25 @@ import BasicModal from "./ui/popup";
 import { Modal } from "@mui/material";
 import { BasicTextFields } from "./ui/test.js";
 import { TextField } from "@mui/material";
-
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'], style:"italic" })
+import clsx from "clsx";
 
 const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
+    zIndex:0,
   };
+
+  const divStyle = {
+    backgroundColor: "#ff6868",
+    backgroundAttachment:"scroll",
+    backgroundImage: "/aggieace.webp",
+    backgroundSize:"screen"
+  }
+  
 
 export default function Home() {
     const [elements, setElements] = useState([<ActionAreaCard key={0} courseName="Course 1" sectionNumber="Section number"/>]);
@@ -90,14 +99,37 @@ export default function Home() {
             <div className = "flex justify-center">
                 <Topbar/>
             </div>
-            <div className="flex justify-center m-32">
+            <div
+              className="flex justify-center p-20"
+            >
                 <p className={`text-white text-5xl ${inter.className}`}>Your Syllabus Simplified, Your Grades Amplified.</p>
             </div>
+            <div className="flex absolute mt-4 h-1/3 object-cover object-bottom origin-center">
+                <Image 
+                    src = {"/aggieace.webp"}
+                    //edge = "start"
+                    width={270}
+                    height={270}      
+                    sx={{
+                        position:"absolute",
+                    }}
+                />
+            </div>
             <div
-                className="flex justify-center color-white gap-14 flex-wrap shrink-0"
+              className="flex justify-center p-32"
+              style={divStyle}
+            >
+
+            </div>
+            <div
+                className="flex justify-center color-white gap-14 flex-wrap shrink-0 bg-[#202020] m-20"
+                stlye={{zIndex:50}}
             >
                 {elements}
                 <AddCourseButton/>
+            </div>
+            <div className="h-screen">
+
             </div>
         </Box>
     );

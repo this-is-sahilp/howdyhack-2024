@@ -27,7 +27,7 @@ def convertTXT(): # does all the pdf to text conversion
 
     def readDir(): # gets all the files in the pdf directory
     # Specify the directory path
-        directory_path = 'pdfs'
+        directory_path = 'hh24/pdfs'
 
         # List all files in the directory
         files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f))]
