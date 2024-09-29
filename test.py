@@ -1,3 +1,9 @@
+import test
+from flask import Flask, request
+import os
+import time 
+
+
 def convertTXT(pdf): # does all the pdf to text conversion
     import pdfplumber
     import os
@@ -163,6 +169,8 @@ def date_format(file_path, section, className):
         
         
         {final}"""
+        
+    time.sleep(5)
     
     cal = OR(calPrompt)    
     
@@ -184,8 +192,6 @@ def date(file, className, section):
 
 
 
-
-
 def runAll(filePath, courseName, sectionNumber):
     txtPath = convertTXT(filePath)
     
@@ -193,6 +199,3 @@ def runAll(filePath, courseName, sectionNumber):
     
     date(f'outputs/{txtPath}', courseName, sectionNumber)
     
-    
-
-runAll("Joe-Math151Syllabus-24c-3.pdf", "Math 151", 546)
