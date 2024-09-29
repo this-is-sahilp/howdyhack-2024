@@ -7,13 +7,6 @@ def convertTXT(): # does all the pdf to text conversion
 
     def openPDF(inputPDF):
         
-        newFile = ''
-        if inputPDF.endswith(".html"):
-            htmlToPDF(inputPDF)
-            newFile = inputPDF[0:-5]
-            newFile  = newFile + '.pdf'
-            inputPDF = newFile
-        
         with pdfplumber.open(f'pdfs/{inputPDF}') as pdf:
             text = ""
 
@@ -40,7 +33,7 @@ def convertTXT(): # does all the pdf to text conversion
         files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f))]
 
         for file in files:
-            if (not file.endswith(".pdf")) or (not file.endswith(".html")):
+            if (not file.endswith(".pdf")):
                 files.remove(file)
 
         # Print the list of files
@@ -78,16 +71,7 @@ def OR(input_prompt): #does the ai formatting
     )
 
     return (completion.choices[0].message.content)
-
-def htmlToPDF(file):
-    
-    import pdfkit 
-    
-    newFile = file[0:-5]
-    newFile  = newFile
-    
-    pdfkit.from_file(f'pdfs/{file}', f'pdfs/{newFile}.pdf') 
-    
+        
     
 
 def txtToStr(file_path): # converts the .txt file to a string
@@ -211,8 +195,6 @@ def date(file, className, section):
 
 
 convertTXT()
-
-# date("outputs/geog205.txt", "Geog 205", 546)
 
 # all outputs, all classes, all sections
 
