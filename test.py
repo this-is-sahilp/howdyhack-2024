@@ -207,3 +207,5 @@ def runAll(filePath, courseName, sectionNumber):
     
     date(f'outputs/{txtPath}', courseName, sectionNumber)
     
+    return f'cals/{courseName}.ics'
+    
