@@ -104,7 +104,9 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
     };
 
     const downloadClick = () => {
-      downloadPDF(filePathThing, `${name}.cls`)
+      console.log(`./cals/${name.ics}`)
+      downloadPDF(`./cals/${name}.ics`, `${name}.ics`)
+
     }
     
     // File content to be displayed after
@@ -153,13 +155,6 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
         </Button>
         <button className="bg-blue-600 rounded-lg px-3 text-white shadow-md" onClick={onFileUpload}>
           Simplify!
-        </button>
-        <button
-          disabled={filePathThing} 
-          className="bg-blue-600 rounded-lg px-3 text-white shadow-md"
-          onClick={downloadClick}
-        >
-          Download!
         </button>
         </div>
       );

@@ -65,7 +65,7 @@ def OR(input_prompt): #does the ai formatting
             ]
         )
         
-        if completion.choices[0].message.content == '':
+        if completion.choices[0].message.content is None:
             continue
         
         
