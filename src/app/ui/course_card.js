@@ -32,6 +32,9 @@ const textBoxStyle = {
     bgcolor:"white"
 }
 
+export function DownloadButton({fileName}) {
+}
+
 export default function ActionAreaCard({ courseName, sectionNumber }) {
     const [name, setName] = useState(courseName);
     const [section, setSection] = useState("001");
@@ -41,9 +44,23 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
     const handleClose = () => setOpen(false);
     const [selectedFile, changeSelectedFile] = useState();
     const [filePathThing, changeFilePathThing] = useState();
+    const [path, changePath] = useState();
 
 
     function InputFileUpload() {  
+
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const result = await axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
+          changeFilePathThing(result);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      };
+  
+      fetchData();
+    }, [path]);
 
     
     
@@ -73,22 +90,8 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
     
         // Request made to the backend api
         // Send formData object
-
-        useEffect(() => {
-          const fetchData = async () => {
-            try {
-              const result = await axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
-              changeFilePathThing(result);
-            } catch (error) {
-              console.error('Error fetching data:', error);
-            }
-          };
-      
-          fetchData();
-        });
-
-        filePathTemp = axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
-        changeFilePathThing(filePathTemp);
+        const tempPath = axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
+        changeFilePathThing(tempPath);
     };
 
     const downloadPDF = (url, filename) => {
@@ -99,11 +102,10 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
       link.click();
       document.body.removeChild(link);
     };
-    const downloadClick = (e) => {
-      e.preventDefault();
-      downloadPDF(filePathThing, `${name}.ics`)
-    };
-    
+
+    const downloadClick = () => {
+      downloadPDF(filePathThing, `${name}.cls`)
+    }
     
     // File content to be displayed after
     // file upload is complete
