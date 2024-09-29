@@ -65,7 +65,7 @@ def OR(input_prompt): #does the ai formatting
             ]
         )
         
-        if completion.choices[0].message.content is None:
+        if completion is None:
             continue
         
         
@@ -96,7 +96,7 @@ def date_format(file_path, section, className):
     
     Make sure AM and PM is correct. HUMANITY DEPENDS ON IT
 
-    
+    WRITE THE CORRECT DATE. IF THE DATE IS NOT SPECIFIED AND ONLY THE DAY IS, START ON MONDAY AUG 19 2024 and END FRIDAY 13 2024 FOR RECURRING EVENTS
     
     
     THE SECTION IS       {section}      {fileString}     FORMAT THE FOLLOWING SYLLABUS LIKE: (Category), (Day), (Time), (Location), (Section). WITH SECTION     {section}       DO NOT INCLUDE ANYTHING ELSE. MAKE SURE THE DATES ARE 100% CORRECT. HUMANITY DEPENDS ON IT. MAKE SURE THE TIMES ARE EXACTLY CORRECT.      EXAMPLE OUTPUT: (Lecture), (Monday, Tuesday, Wednesday), (9:15 to 10:15 A.M.), (Building 283), ({section})"""
