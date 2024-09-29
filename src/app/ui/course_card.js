@@ -128,7 +128,7 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
     return (
     
 
-    <Card sx={{ width: 290, height: 230, font: "Georgia", bgcolor:"maroon"}}>
+    <Card sx={{ width: 290, height: 230, font: "Georgia", bgcolor:"maroon"}} className="rounded-xl">
       <CardActionArea
         sx={{
             width:"100%",

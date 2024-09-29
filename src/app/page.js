@@ -38,7 +38,6 @@ const style = {
     backgroundColor: "#ff6868",
     backgroundAttachment:"scroll",
     backgroundImage: "/aggieace.webp",
-    backgroundSize:"screen"
   }
   
 
@@ -68,7 +67,7 @@ export default function Home() {
 
       function AddCourseButton() {
         return (
-          <Card sx={{ width: 290, height: 235 }}>
+          <Card sx={{ width: 290, height: 235 }} className="rounded-xl">
             <CardActionArea sx={{ width: 290, height: 235}}>
               <CardContent
                 display="flex"
@@ -100,36 +99,29 @@ export default function Home() {
                 <Topbar/>
             </div>
             <div
-              className="flex justify-center p-20"
+              className="flex justify-center px-20 pt-20"
             >
                 <p className={`text-white text-5xl ${inter.className}`}>Your Syllabus Simplified, Your Grades Amplified.</p>
             </div>
-            <div className="flex absolute mt-4 h-1/3 object-cover object-bottom origin-center">
+            <div className="flex mt-4 object-cover object-bottom justify-center">
                 <Image 
-                    src = {"/aggieace.webp"}
+                    src = {"/aggie_ace.webp"}
                     //edge = "start"
-                    width={270}
-                    height={270}      
+                    width={300}
+                    height={300}      
                     sx={{
                         position:"absolute",
                     }}
+                    className="rounded-3xl"
                 />
             </div>
             <div
-              className="flex justify-center p-32"
-              style={divStyle}
-            >
-
-            </div>
-            <div
                 className="flex justify-center color-white gap-14 flex-wrap shrink-0 bg-[#202020] m-20"
-                stlye={{zIndex:50}}
             >
                 {elements}
                 <AddCourseButton/>
             </div>
             <div className="h-screen">
-
             </div>
         </Box>
     );
