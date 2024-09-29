@@ -1,4 +1,4 @@
-def convertTXT(): # does all the pdf to text conversion
+def convertTXT(pdf): # does all the pdf to text conversion
     import pdfplumber
     import os
 
@@ -18,33 +18,20 @@ def convertTXT(): # does all the pdf to text conversion
 
         cleanName = inputPDF # name with the .pdf and .txt
         cleanName = inputPDF[0:-4]
+        
 
         with open(f'outputs/{cleanName}.txt', 'w') as text_file:
             text_file.write(text)
 
-
+        cleanTXT = f'{cleanName}.txt'
         print("PDF has been converted to text.")
+        
+        return cleanTXT
 
-    def readDir(): # gets all the files in the pdf directory
-    # Specify the directory path
-        directory_path = 'pdfs'
-
-        # List all files in the directory
-        files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f))]
-
-        for file in files:
-            if (not file.endswith(".pdf")):
-                files.remove(file)
-
-        # Print the list of files
-        for file in files:
-            print(file)
-            openPDF(file)
-
-
-    # openPDF('input.pdf')
-
-    readDir()
+    return openPDF(pdf)
+    
+    
+    
 
 def OR(input_prompt): #does the ai formatting
     from openai import OpenAI
@@ -69,11 +56,13 @@ def OR(input_prompt): #does the ai formatting
             }
         ]
     )
-
-    return (completion.choices[0].message.content)
-        
     
-
+    msg = completion.choices[0].message.content
+    
+    print(msg)
+    
+    return (msg)
+        
 def txtToStr(file_path): # converts the .txt file to a string
     # Open the file and read its contents
     with open(file_path, 'r') as file:
@@ -191,17 +180,19 @@ def strToICS(file_path, className, section):
 def date(file, className, section):
     
     strToICS(file, className, section)
+
+
+
+
+
+
+def runAll(filePath, courseName, sectionNumber):
+    txtPath = convertTXT(filePath)
+    
+    print(txtPath)
+    
+    date(f'outputs/{txtPath}', courseName, sectionNumber)
+    
     
 
-
-convertTXT()
-
-# all outputs, all classes, all sections
-
-
-# count pdfs in the pdf directory and create an array of them
-# c
-
-
-
-# on recieve 
+runAll("Joe-Math151Syllabus-24c-3.pdf", "Math 151", 546)
