@@ -44,29 +44,37 @@ def OR(input_prompt): #does the ai formatting
     from os import getenv
 
 
+    success = False
+    
+    while success == False:
+        # gets API Key from environment variable OPENAI_API_KEY
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key='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',
+        )
+        
 
-    # gets API Key from environment variable OPENAI_API_KEY
-    client = OpenAI(
-        base_url="https://openrouter.ai/api/v1",
-        api_key='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',
-    )
-    
+        completion = client.chat.completions.create(
 
-    completion = client.chat.completions.create(
-
-        model="google/gemini-pro-1.5-exp",
-        messages=[
-            {
-            "role": "user",
-            "content": input_prompt
-            }
-        ]
-    )
-    
-    msg = completion.choices[0].message.content
-    
-    print(msg)
-    
+            model="google/gemini-pro-1.5-exp",
+            messages=[
+                {
+                "role": "user",
+                "content": input_prompt
+                }
+            ]
+        )
+        
+        if completion.choices[0].message.content == '':
+            continue
+        
+        
+        success = True
+        
+        msg = completion.choices[0].message.content
+        
+        print(msg)
+        
     return (msg)
         
 def txtToStr(file_path): # converts the .txt file to a string
