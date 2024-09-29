@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from 'react';
@@ -14,6 +15,8 @@ import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import { Button } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';4
 import axios from 'axios';
+import clsx from 'clsx';
+import { useEffect } from 'react';
 
 const style = {
     position: 'absolute',
@@ -36,7 +39,8 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const [selectedFile, changeSelectedFile] = useState()
+    const [selectedFile, changeSelectedFile] = useState();
+    const [filePathThing, changeFilePathThing] = useState();
 
 
     function InputFileUpload() {  
@@ -69,7 +73,35 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
     
         // Request made to the backend api
         // Send formData object
-        axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
+
+        useEffect(() => {
+          const fetchData = async () => {
+            try {
+              const result = await axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
+              changeFilePathThing(result);
+            } catch (error) {
+              console.error('Error fetching data:', error);
+            }
+          };
+      
+          fetchData();
+        });
+
+        filePathTemp = axios.post("http://127.0.0.1:5000/api/uploadfile", formData);
+        changeFilePathThing(filePathTemp);
+    };
+
+    const downloadPDF = (url, filename) => {
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+    const downloadClick = (e) => {
+      e.preventDefault();
+      downloadPDF(filePathThing, `${name}.ics`)
     };
     
     
@@ -117,10 +149,16 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
           />
           <fileData/>
         </Button>
-        <button className="bg-gray-300" onClick={onFileUpload}>
-          Submit
+        <button className="bg-blue-600 rounded-lg px-3 text-white shadow-md" onClick={onFileUpload}>
+          Simplify!
         </button>
-        {fileData}
+        <button
+          disabled={filePathThing} 
+          className="bg-blue-600 rounded-lg px-3 text-white shadow-md"
+          onClick={downloadClick}
+        >
+          Download!
+        </button>
         </div>
       );
     }

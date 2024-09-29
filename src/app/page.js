@@ -99,9 +99,9 @@ export default function Home() {
                 <Topbar/>
             </div>
             <div
-              className="flex justify-center px-20 pt-20"
+              className="flex justify-center px-20 pt-20 pb-10"
             >
-                <p className={`text-white text-5xl ${inter.className}`}>Your Syllabus Simplified, Your Grades Amplified.</p>
+                <p className={`text-white text-5xl ${inter.className}`}>School Simplified, Grades Amplified.</p>
             </div>
             <div className="flex mt-4 object-cover object-bottom justify-center">
                 <Image 
