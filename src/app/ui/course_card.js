@@ -66,7 +66,7 @@ export default function ActionAreaCard({ courseName, sectionNumber }) {
         );
         formData.append("filename", name);
         formData.append("course", name);
-        formData.append("section", sectionNumber);
+        formData.append("section", section);
     
         // Details of the uploaded file
         console.log(selectedFile);

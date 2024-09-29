@@ -1,0 +1,424 @@
+MATH 151 Engineering Math I
+Fall 2024
+SYLLABUS
+COURSE INFORMATION
+Course Number: MATH 151
+Course Title: Engineering Mathematics I
+Lecture: 151: 540 – 548 MWF 8:00 – 8:50 PM In ILCB 111
+Lab/Recitation (540) TR 8:25 AM – 9:15 AM T: Lab in BLOC 124 R: Recitation in HEB 222
+Lab/Recitation (541) TR 9:35 AM – 10:25 AM T: Lab in BLOC 126 R: Recitation in HEB 223
+Lab/Recitation (542) TR 11:10 AM – Noon T: Lab in BLOC 123 R: Recitation in HEB 137
+Lab/Recitation (543) TR 12:45 PM – 1:35 PM T: Lab in BLOC 126 R: Recitation in HEB 223
+Lab/Recitation (544) TR 2:20 PM – 3:10 PM T: Lab in BLOC 126 R: Recitation in HEB 223
+Lab/Recitation (545) TR 3:55 PM – 4:45 PM T: Lab in BLOC 133 R: Recitation in BLOC 133
+Lab/Recitation (546) TR 11:10 AM – Noon T: Lab in BLOC 129 R: Recitation in BLOC 129
+Lab/Recitation (547) TR 9:35 AM – 10:25 AM T: Lab in BLOC 123 R: Recitation in HEB 137
+Lab/Recitation (548) TR 5:30 PM – 6:20 PM T: Lab in HEB 203 R: Recitation in HEB 203
+Room locations may change. See Howdy for the official schedule.
+Lecture: 151: 549 – 557 MWF 9:10 – 10:00 AM in ILCB 111
+Lab/Recitation (549) TR 8:25 AM – 9:15 AM T: Lab in BLOC 126 R: Recitation in HEB 223
+Lab/Recitation (550) TR 5:30 PM – 6:20 PM T: Lab in BLOC 120 R: Recitation in BLOC 120
+Lab/Recitation (551) TR 11:10 AM – Noon T: Lab in BLOC 126 R: Recitation in HEB 223
+Lab/Recitation (552) TR 12:45 PM – 1:35 PM T: Lab in BLOC 124 R: Recitation in HEB 222
+Lab/Recitation (553) TR 2:20 PM – 3:10 PM T: Lab in BLOC 123 R: Recitation in BLOC 133
+Lab/Recitation (554) TR 3:55 PM – 4:45 PM T: Lab in BLOC 126 R: Recitation in HEB 223
+T 8:25 AM – 9:15 AM T: Lab in BLOC 122
+Lab/Recitation (555)
+R 2:20 PM – 3:10 PM R: Recitation in BLOC 133
+T 3:55 PM – 4:45 PM T: Lab in BLOC 122
+Lab/Recitation (556)
+R 2:20 PM – 3:10 PM R: Recitation in BLOC 133
+Lab/Recitation (557) TR 5:05 PM – 5:55 PM T: Lab in BLOC 122 R: Recitation in BLOC 122
+Room locations may change. See Howdy for the official schedule.
+INSTRUCTOR DETAILS
+Instructor: Joe Kahlig
+Office: Blocker 328D
+Phone: Math Department: 979-845-7554 (There is no phone in my office, so email is a better way to reach me.)
+E-Mail: kahlig@tamu.edu
+Course Webpage: https://people.tamu.edu/~kahlig/
+Office Hours: Monday: 1pm-3pm in Blocker 605AX
+Wednesday: 1:40-2:50 in Blocker 123
+Friday: 1:30pm-3:30pm Blocker 605AX
+Other times by appointment.
+COURSE DESCRIPTION
+MATH 151 Engineering Mathematics I (MATH 2413), Rectangular coordinates, vectors, analytic geometry, functions,
+limits, derivatives of functions, applications, integration, computer algebra. MATH 171 designed to be a more demanding
+version of this course. Only one of the following will satisfy the requirements for a degree: MATH 131, MATH 142, MATH
+147, MATH 151 and MATH 171.
+Page 1 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+COURSE PREREQUISITES
+MATH 150 or equivalent or acceptable score on TAMU Math Placement Exam.
+SPECIAL COURSE DESIGNATION
+This is a CORE curriculum course in Mathematics equivalent to MATH 2413. Courses in this category focus on quantitative
+literacy in logic, patterns, and relationships. Courses involve the understanding of key mathematical concepts and the
+application of appropriate quantitative tools to everyday experiences.
+COURSE LEARNING OUTCOMES
+This course focuses on quantitative literacy in mathematics along with real world applications to physics, related rate
+problems, and optimization. Upon successful completion of this course, students will be able to:
+● Understand vectors and vector functions, both graphically and quantitatively, and apply them to real world
+situations involving velocity, forces, and work.
+● Construct vector and parametric equations of lines and understand vector functions and their relationship to
+parametric equations.
+● Understand the concept of a limit graphically, numerically, and algebraically, and apply the relationship
+between limits, continuity, and differentiability in determining where a function is continuous and/or
+differentiable.
+● Define the limit definition of the derivative and calculate derivatives using the limit definition, differentiation
+formulas, the chain rule, and implicit differentiation, with applications to tangent line and velocity problems.
+● Calculate limits and derivatives of vector functions with applications to physics such as computing velocity and
+acceleration vectors.
+● Identify exponential, logarithmic, and inverse trigonometric functions, and compute limits and derivatives
+involving these classes of functions.
+● Apply the derivative to mathematically model velocity and acceleration as well as real world related rate
+applications, such as calculating the rate at which the distance between two moving objects is changing or the
+rate at which the volume of a cone being filled with water is changing.
+● Approximate functions and function values using the derivative and the tangent line.
+● Identify and understand indeterminate forms and apply the derivative to calculate limits using L'Hôpital's Rule.
+● Understand and apply the Intermediate Value Theorem and the Mean Value Theorem and be able to logically
+determine when these theorems can be used.
+● Use calculus and logic to sketch graphs of functions and analyze their properties, including where a function is
+increasing/decreasing and in describing the concavity of the function.
+● Determine the maximum/minimum values of functions, including applied optimization problems.
+● Compute antiderivatives and understand the concept of integration as it relates to area and Riemann sums.
+● Articulate the relationship between derivatives and integrals using the Fundamental Theorem of Calculus, and
+evaluate definite integrals using the Fundamental Theorem of Calculus.
+● Use a Computer Algebra System to solve problems.
+CORE OBJECTIVES
+CRITICAL THINKING: creative thinking, innovation, inquiry, and analysis, evaluation
+and synthesis of information.
+The following communication skills will be assessed on quizzes and exams:
+● Think critically about limits in determining how the limit conceptually relates to the behavior of the function.
+● Think critically about continuity and differentiability to justify whether a function is continuous and or
+differentiable at a point.
+● Evaluate the proper technique to use when computing limits and derivatives of functions.
+Page 2 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+● Synthesize data determined from the first and second derivatives to determine the properties and shape of a
+function.
+● Use inquiry to determine on what intervals a function is increasing/decreasing and to determine the intervals of
+concavity of the function by analyzing the signs of the first and second derivatives.
+● Innovatively think about how to solve related rate word problems and optimization problems.
+● Analyze functions using continuity and the derivative in determining the maximum and minimum values of the
+function, and if they exist.
+● Develop a critical understanding of the relationship between the derivative and the integral using the
+Fundamental Theorem of Calculus.
+COMMUNICATION SKILLS: effective development, interpretation, and expression of ideas
+through written, oral and visual communication
+The following communication skills will be assessed on quizzes and exams:
+● Recognize and construct graphs of basic functions, including polynomials, exponential functions, logarithmic
+functions, and trigonometric functions.
+● Justify solutions to optimization problems in writing.
+● Interpret information from the derivatives of a function in order to develop a visual sketch of the graph of the
+function and to communicate in writing the properties of the function.
+● Identify points of discontinuity and non-differentiability by examining the graphs of functions.
+● Express mathematical concepts, such as the definition of the derivative, both abstractly with equations and in
+writing solutions to problems.
+● Develop solutions to problems that involve the use of theorems, such as the Squeeze Theorem, the Intermediate
+Value Theorem, and the Mean Value Theorem.
+● Students will use graphs of functions to determine the value of definite integrals as they relate to area.
+● Be required to communicate orally with other group members when working on Computer Algebra System
+projects or other group activities.
+● Communicate orally in group discussion in the required weekly recitation sessions.
+EMPIRICAL AND QUANTITATIVE SKILLS: manipulation and analysis of numerical data or observable facts resulting in
+informed conclusions.
+The following communication skills will be assessed on quizzes and exams:
+● Analyze limits numerically to determine the sign of the infinite limit.
+● Analyze numerical data in determining the signs of the first and second derivative in order to make conclusions
+on the shape of the graph.
+● Compute derivatives and interpret the results as they relate to tangent line, velocity, and other rate of change
+problems.
+● Numerically approximate the values of a function by using the tangent line approximation.
+● Calculate antiderivatives of functions and use initial data to determine any unknown constants.
+● Make conclusions involving maximum and minimum values of functions (both local and absolute) based on
+information from the derivative.
+● Manipulate given information to develop a function to be used in optimization problems and then apply calculus
+to find and interpret the optimal solution.
+● Approximate the value of a definite integral numerically using Riemann sums.
+● Compute definite integrals and interpret the results as they relate to area under a curve.
+● Manipulate given information to create a related rate model involving known quantities, and then apply calculus
+to solve for an unknown rate of change.
+Page 3 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+TEXTBOOK AND/OR RESOURCE MATERIALS
+TEXTBOOK: Calculus: Early Transcendentals (9th Edition) by James Stewart; Cengage Learning
+Note: You will be required to purchase access to the online homework system, WebAssign, but doing so will automatically
+give you access to the eBook version of the text. The textbook is available in different formats, and there are a variety of
+purchasing options available (course specific access or Cengage Unlimited). Purchase can be made through the local
+bookstores or directly in WebAssign. Starting on the first day of classes, you will be granted access for a trial period while
+you determine the appropriate purchasing option for you.
+Cengage Unlimited Subscription: Cengage Unlimited subscription gives you access to Cengage’s full
+library of online textbooks, study guides, online homework platforms, and an optional print rental, for one
+price. You can also purchase access to Cengage Unlimited in the bookstore. For a multi-term course with
+a purchase a 1 or 2 term Cengage Unlimited Subscription, you will keep access to those materials for the
+duration of the course sequence, even after your Cengage Unlimited subscription ends.
+WebAssign Access: WebAssign will be used for homework in this class. A link to the assignments will be available in
+Canvas Modules. The first time you access the homework MUST be done through Canvas. Future access may be possible
+through your Cengage account. WebAssign has an access fee and you will need to “purchase access online” during the
+first two weeks of school. After that, you risk being locked out of the system and missing important assignments.
+Gradescope Access: Gradescope is a web-based application that may be used to grade lab assignments, quizzes as well as
+the workout portions of the exams. Gradescope may be accessed through Canvas.
+Calculator Policy: Calculators are not allowed on Quizzes or Exams but may be needed on homework.
+GRADING POLICY
+The course grading will be based on the tables below. At the end of the semester, you will receive the grade you earned,
+according to the scale given. Due to FERPA privacy issues, I cannot discuss grades over email or phone. If you have
+a question about your grade, please schedule a one-on-one meeting with me.
+GRADE BREAKDOWN GRADING SCALE
+Activity Date Percentage
+Homework Weekly 8% Range Grade
+Quizzes Weekly 8% 90 ≤ Average ≤ 100 A
+Python Lab See Canvas for schedule 2.8% 80 ≤ Average < 90 B
+Assignment 67 ≤ Average < 80 C
+Python Lab Quiz See Canvas for schedule 1.2% 57 ≤ Average < 67 D
+Exam I 9/19/24 20% Average < 57 F
+Exam II 10/17/24 20%
+Exam III 11/14/24 20%
+Final Exam See Below 20%
+TOTAL 100%
+APPEAL POLICY
+Students have one week upon the return of a lab, quiz, or exam to notify their instructor of any inaccuracies in their graded
+work. No changes will be made after this one-week period and the grade will stand. Instructions on how to submit a regrade
+request in Gradescope can be found in the Class Information in Canvas.
+The following are exceptions for the one-week deadline for a grade appeal:
+• Points on the assignment were totaled incorrectly or a submission error occurred when the grade was transferred to
+Canvas.
+Page 4 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+• During the submission of the assignment, the submitter did not tag all members of the group. A list of all group
+members who worked on the lab MUST be at the top of the first page of the submitted lab.
+• A student had an extended absence during that one week appeal period that impacted the student’s ability to submit
+a regrade request.
+HOMEWORK
+Electronic homework assignments will be completed online in WebAssign. Please note that this homework may NOT be
+a comprehensive set of problems in terms of preparing for exams and quizzes. Some additional practice problems can also
+be found in the textbook and in WebAssign.
+A link to each assignment can be found in a Canvas Module. You must log in to WebAssign through Canvas, the first time
+you access the homework. Do not wait until the last minute to complete your online homework as last-minute technical
+difficulties will not be an excuse for missing a deadline. Pay close attention to the due dates inside of WebAssign.
+• The homework for a section will be due approximately 2 - 3 days after the lecture over that material is completed.
+• For every assignment, you may request an extension that will extend the original due date by two days. Any
+problem submitted during the extension period will only receive half credit. An extension will not be granted if it
+is requested more than two days after the original due date unless there are very special circumstances. Directions
+on how to use the WebAssign system can be found on my web page.
+• Two homework assignments will be dropped when computing the homework average.
+• WebAssign also will contain practice assignments that are NOT for a grade.
+• My webpage has a link to suggested homework from the textbook. These suggested problems are not for a grade.
+The department has a Student Help Page, at the link given below, that has various information as well as a Student Help
+Request Form. This form is for technical issues, not help with solving mathematical problems.
+http://www.math.tamu.edu/courses/eHomework
+QUIZZES AND LABS
+Each section will meet twice weekly for lab and recitation. You will take weekly quizzes for a grade and will work in groups
+to complete Python assignments. In at least one of these assignments, you will be expected to explain your reasoning in a
+written format. In at least one of these assignments, you will be expected to explain your reasoning in an oral recording.
+• Tuesday: Lab meetings.
+◦ Lab meetings will be used for working on Python assignments and to take Python quizzes.
+◦ The Python Quiz is a three-point quiz that will be taken at the beginning of the lab period on the
+day. A laptop will be needed to take this quiz since the quiz be given in Canvas.
+◦ A Python quiz will be taken every week when a Python lab assignment is also due.
+◦ The Python lab assignments are group assignments.
+◦ Group members who do not participate in the lab assignment will not receive any credit for the
+assignment.
+◦ The lab schedule can be found in the Canvas.
+• THURSDAY: RECITATION MEETINGS are question/answer sessions with your Teaching Assistant. A
+weekly quiz will also be given on this day. At least one quiz will be dropped when computing the
+quiz average.
+Page 5 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+EXAMS
+There will be three common exams during the semester. These exams are evening exams taken by all Math 151 students
+at the same time. Bring your Texas A&M student ID and a pencil/pen to all exams. You will need a scantron for all exams.
+The location of the common exams will be determined later. The tentative exam schedule is as follows:
+Common Exam I: Thursday, September 19, 7:30 – 9:30 PM
+Common Exam II: Thursday, October 17, 7:30 – 9:30 PM
+Common Exam III: Thursday, November 14, 7:30 – 9:30 PM
+FINAL EXAM
+The final exam will be comprehensive and is required for all students. If your final exam grade is higher than your lowest
+test grade, the grade on your final will replace that test grade in the final grade calculation. The final exam schedule is as
+follows:
+Sections Lecture Time Final Exam Date & Time
+540 - 548 MWF 8:00 – 8500 AM Thursday, Dec 5, 10:00 AM – Noon in ILCB 111
+549 - 557 MWF 9:10 – 10:00 AM Friday, Dec 6, 8:00 AM – 10:00 AM in ILCB 111
+(Refer to https://aggie.tamu.edu/registration-and-records/classes/final-examination-schedules for the University final exam schedule.)
+LATE WORK POLICY
+• Online homework assignments will be accepted late (up to two days from the original due date) for a
+penalty for any problems submitted during the extension period. Any problem submitted during the
+extension period will only receive half credit. An extension will not be granted if it is requested more
+than two days after the original due date.
+• Any other late work will NOT be accepted unless you have a University approved reason and contact
+me or the recitation instructor within 2 working days of the missed assignment.
+• Unless prior arrangements have been made, the last day to complete makeup work is the last day of
+classes.
+TENTATIVE COURSE TOPICS AND CALENDAR OF ACTIVITIES
+WEEK OF TOPIC SECTIONS
+Appendix J.1 &
+Week 1: 8/19 – 8/23 Vectors; The Dot Product
+J.2
+Vector Functions and Parametric Curves; Inverse Trigonometric Appendix J.3,
+Week 2: 8/26 – 8/30
+Functions; The Limit of a Function 1.5, 2.2
+Week 3: 9/2 – 9/6 Calculating Limits using Limit Laws; Continuity; Limits at Infinity and
+2.3, 2.5, 2.6
+M 9/2 Labor Day Horizontal Asymptotes
+Derivatives and Rates of Change; The Derivative as a Function;
+Week 4: 9/9 – 9/13 2.7, 2.8, 3.1
+Derivatives of Polynomial and Exponential Functions
+The Product and Quotient Rules; Derivatives of Trigonometric
+Week 5: 9/16 – 9/20 3.2, 3.3
+Functions; EXAM I (Appendix J.1 through 2.8)
+The Chain Rule; Implicit Differentiation; Derivatives of Logarithmic
+Week 6: 9/23 – 9/27 3.4, 3.5, 3.6
+Functions
+Derivatives of Vector Functions; Slopes and Tangents to Parametric Appendix K.1,
+Week 7: 9/30 – 10/4
+Curves; Rates of Change in the Natural and Social Sciences K.2, 3.7
+Page 6 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+Week 8: 10/7 – 10/11 Exponential Growth and Decay; Related Rates
+3.8, 3.9
+Fall Break 10/7 & 10/8
+Linear Approximations and Differentials; Maximum and Minimum
+Week 9: 10/14 – 10/18 3.10, 4.1
+Values; EXAM II (3.1 through 3.9)
+The Mean Value Theorem; How Derivatives Affect the Shape of a
+Week 10: 10/21 – 10/25 4.2, 4.3, 4.4
+Graph; Indeterminate Forms and L’Hôpital’s Rule
+Week 11: 10/28 – 11/1 Indeterminate Forms and L’Hôpital’s Rule cont.; Optimization Problems 4.4, 4.7
+Week 12: 11/4 – 11/8 Antiderivative; Areas and Distances; 4.9, 5.1
+The Definite Integral ; The Fundamental Theorem of Calculus; EXAM
+Week 13: 11/11 – 11/15 5.2, 5.3
+III (3.9 through 5.1)
+The Fundamental Theorem of Calculus cont; Indefinite Integrals and the
+Week 14: 11/18 – 11/22 5.3, 5.4, 5.5
+Net Change Theorem; The Substitution Rule
+Week 15: 11/25 – 12/9
+The Substitution Rule cont 5.5
+Thanksgiving
+Week 16-17: 12/12 – 12/10 Review and Final Exams
+OTHER IMPORTANT DATES:
+Sep 2: Labor Day
+Oct 7-8: Fall Break
+Nov 13: Last day to Q-Drop
+Nov 27: Reading Day, No Classes
+Nov 28-29: Thanksgiving Holiday
+Dec 3-4: Reading Day, no classes
+OTHER COURSE INFORMATION
+CLASS ANNOUNCEMENTS, E-MAIL POLICY AND COMMUNICATIONS:
+Class announcements will be sent to your university e-mail account. If you send me an e-mail, please include
+your name and course information (i.e. class and section) as well as any additional information that I might need
+to help respond to your e-mail.
+TECHNOLOGY SUPPORT
+As much of our learning experience relies on technology, many students can get overwhelmed when something goes wrong
+or things get overwhelming. If you’re looking for a curation of online learning resources, consider checking out
+https://keeplearning.tamu.edu/.
+If your need is specific to a course-related technology issue, consider seeking help from the 24/7 TAMU IT Help Desk.
+https://it.tamu.edu/help/.
+Page 7 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+MATH LEARNING CENTER
+The Math Learning Center(MLC) is offers various forms of support both online and face-to-face, including drop-
+in Help-Sessions, Tutoring by Appointment, Week-in-Review Sessions and other activities.
+https://mlc.tamu.edu/
+Week-in-Review (WIR)
+On my webpage are links to the week in review from previous semesters. The problem sets as well as solutions
+can be found on my webpage.
+There will be Week-in-Review sessions starting the second week of classes. Each review is open to all Math 151 students
+to review the topics of the previous week and to provide additional examples. The schedule and problem set that will be
+worked during these sessions can be found at
+https://mlc.tamu.edu/math-support/week-in-review
+Help Sessions
+Help sessions are an opportunity for you to ask questions and get help with your homework. These sessions are led by
+students, where you may come and go, as your schedule allows. The schedule can be found at
+http://mlc.tamu.edu/Online-Help-Services/MLC-Help-Sessions
+UNIVERSITY POLICIES
+ATTENDANCE POLICY
+The university views class attendance and participation as an individual student responsibility. Students are expected to
+attend class and to complete all assignments.
+Please refer to Student Rule 7 in its entirety for information about excused absences, including definitions, and related
+documentation and timelines.
+Attendance is essential to complete this course successfully.
+• For an absence to be considered excused, the student must notify the instructor in writing (e-mail is
+acceptable) prior to the day of absence. In cases where advanced notification is not possible (e.g.
+accident, or emergency), the student must provide notification by the end of the second business day
+after the last date of the absence to arrange a makeup. This notification must include an explanation of
+why advance notice could not be sent.
+• An absence due to a non-acute medical service or appointment (such as a regular checkup) is not an
+excused absence.
+MAKEUP WORK POLICY
+Students will be excused from attending class on the day of a graded activity or when attendance contributes to a student’s
+grade, for the reasons stated in Student Rule 7, or other reasons deemed appropriate by the instructor.
+Please refer to Student Rule 7 in its entirety for information about makeup work, including definitions, and related
+documentation and timelines.
+• Make-up work will NOT be allowed unless a University approved reason is provided in writing. You
+must notify me within 2 working days of the missed assignment to arrange a makeup.
+• Makeup exams will only be allowed provided the absence is excused. The makeup must be taken as soon
+as possible after the missed exam. You will need to schedule to make up your exam within 3 business days of
+the originally scheduled time to allow for grades to be returned in a timely manner.
+Page 8 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+• If you know ahead of time you will be absent during an exam, you must notify me in advance.
+• Your recitation instructor will coordinate with you for making up a recitation assignment.
+• To make up a Python quiz you must set up a time to take a makeup in my office. The department has set a one
+week deadline to make up this quiz.
+Absences related to Title IX of the Education Amendments of 1972 may necessitate a period of more than 30 days for make-
+up work, and the timeframe for make-up work should be agreed upon by the student and instructor” (Student Rule 7, Section
+7.4.1).
+“The instructor is under no obligation to provide an opportunity for the student to make up work missed because of an
+unexcused absence” (Student Rule 7, Section 7.4.2).
+Students who request an excused absence are expected to uphold the Aggie Honor Code and Student Conduct Code. (See
+Student Rule 24.)
+ACADEMIC INTEGRITY STATEMENT AND POLICY
+“An Aggie does not lie, cheat or steal, or tolerate those who do.”
+“Texas A&M University students are responsible for authenticating all work submitted to an instructor. If asked, students must be able
+to produce proof that the item submitted is indeed the work of that student. Students must keep appropriate records at all times. The
+inability to authenticate one’s work, should the instructor request it, may be sufficient grounds to initiate an academic misconduct case”
+(Section 20.1.2.3, Student Rule 20).
+• Providing a fake or falsified doctor's note or other falsified documentation will result in an F* in the course.
+• Using a calculator/other non-approved technology or additional resources (note sheet, classmate's exam, non-
+approved internet sites, ...) on an exam may result in an F* in the course.
+• If a student is guilty of academic dishonesty on an exam, then that exam grade will not be replaced by the final
+exam grade when computing the course grade.
+• Using a calculator/other non-approved technology or additional resources (note sheet, classmate's exam, non-
+approved internet sites, ...) on a quiz will result in at a minimum a zero on the assignment. A zero on a quiz for
+cheating will not be dropped when computing your quiz average.
+• Copying solutions from other sources (i.e. the internet, other groups, friends in other classes or past classes, ...) is
+considered academic dishonesty.
+• In this course, students can discuss homework/python and their solutions. However, it is NOT permissible to copy
+homework/python solutions from another student. The penalties for violating this policy will range from an F on an
+assignment or test, to an F* in the course.
+• Academic dishonesty on a python lab by an individual student will result in sanctions against ALL
+members whose names are on the assignment.
+You can learn more about the Aggie Honor System Office Rules and Procedures, academic integrity, and your rights and responsibilities
+at aggiehonor.tamu.edu.
+AMERICANS WITH DISABILITIES ACT (ADA) POLICY
+Texas A&M University is committed to providing equitable access to learning opportunities for all students. If you experience barriers
+to your education due to a disability or think you may have a disability, please contact Disability Resources in the Student Services
+Building or at (979) 845-1637 or visit disability.tamu.edu. Disabilities may include, but are not limited to attentional, learning, mental
+health, sensory, physical, or chronic health conditions. All students are encouraged to discuss their disability-related needs with
+Disability Resources and their instructors as soon as possible.
+Page 9 of 10 – KahligMATH 151 Engineering Math I
+Fall 2024
+TITLE IX AND STATEMENT ON LIMITS TO CONFIDENTIALITY
+Texas A&M University is committed to fostering a learning environment that is safe and productive for all. University policies and
+federal and state laws prohibit gender-based discrimination and sexual harassment, including sexual assault, sexual exploitation,
+domestic violence, dating violence, and stalking.
+With the exception of some medical and mental health providers, all university employees (including full and part-time faculty, staff,
+paid graduate assistants, student workers, etc.) are Mandatory Reporters and must report to the Title IX Office if the employee
+experiences, observes, or becomes aware of an incident that meets the following conditions (see University Rule 08.01.01.M1):
+● The incident is reasonably believed to be discrimination or harassment.
+● The incident is alleged to have been committed by or against a person who, at the time of the incident, was (1) a student
+enrolled at the University or (2) an employee of the University.
+Mandatory Reporters must file a report regardless of how the information comes to their attention – including but not limited to face-
+to-face conversations, a written class assignment or paper, class discussion, email, text, or social media post. Although Mandatory
+Reporters must file a report, in most instances, you will be able to control how the report is handled, including whether or not to pursue
+a formal investigation. The University’s goal is to make sure you are aware of the range of options available to you and to ensure access
+to the resources you need.
+Students wishing to discuss concerns in a confidential setting are encouraged to make an appointment with Counseling and Psychological
+Services (CAPS).
+Students can learn more about filing a report, accessing supportive resources, and navigating the Title IX investigation and resolution
+process on the University’s Title IX webpage.
+STATEMENT ON MENTAL HEALTH AND WELLNESS
+Texas A&M University recognizes that mental health and wellness are critical factors that influence a student’s academic success and
+overall wellbeing. Students are encouraged to engage in healthy self-care by utilizing available resources and services from Counseling
+& Psychological Services (CAPS). Students who need someone to talk to can call the Texas A&M Helpline (979-845-2700) from 4 p.m.
+to 8 a.m. weekdays and 24 hours on weekends. Emergency help is also available 24 hours through the 988 Suicide & Crisis Lifeline
+(988) or 988lifeline.org.
+Page 10 of 10 – Kahlig

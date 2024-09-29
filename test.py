@@ -1,3 +1,9 @@
+import test
+from flask import Flask, request
+import os
+import time 
+
+
 def convertTXT(pdf): # does all the pdf to text conversion
     import pdfplumber
     import os
@@ -38,29 +44,37 @@ def OR(input_prompt): #does the ai formatting
     from os import getenv
 
 
+    success = False
+    
+    while success == False:
+        # gets API Key from environment variable OPENAI_API_KEY
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key='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',
+        )
+        
 
-    # gets API Key from environment variable OPENAI_API_KEY
-    client = OpenAI(
-        base_url="https://openrouter.ai/api/v1",
-        api_key='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',
-    )
-    
+        completion = client.chat.completions.create(
 
-    completion = client.chat.completions.create(
-
-        model="google/gemini-pro-1.5-exp",
-        messages=[
-            {
-            "role": "user",
-            "content": input_prompt
-            }
-        ]
-    )
-    
-    msg = completion.choices[0].message.content
-    
-    print(msg)
-    
+            model="google/gemini-pro-1.5-exp",
+            messages=[
+                {
+                "role": "user",
+                "content": input_prompt
+                }
+            ]
+        )
+        
+        if completion.choices[0].message.content == '':
+            continue
+        
+        
+        success = True
+        
+        msg = completion.choices[0].message.content
+        
+        print(msg)
+        
     return (msg)
         
 def txtToStr(file_path): # converts the .txt file to a string
@@ -163,6 +177,8 @@ def date_format(file_path, section, className):
         
         
         {final}"""
+        
+    time.sleep(5)
     
     cal = OR(calPrompt)    
     
@@ -184,8 +200,6 @@ def date(file, className, section):
 
 
 
-
-
 def runAll(filePath, courseName, sectionNumber):
     txtPath = convertTXT(filePath)
     
@@ -193,6 +207,5 @@ def runAll(filePath, courseName, sectionNumber):
     
     date(f'outputs/{txtPath}', courseName, sectionNumber)
     
+    return f'cals/{courseName}.ics'
     
-
-runAll("Joe-Math151Syllabus-24c-3.pdf", "Math 151", 546)

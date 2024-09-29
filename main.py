@@ -21,7 +21,7 @@ app = Flask(__name__)
 def get_data():
     print("test")
     
-    request.files["file"].save(f"hh24/pdfs/{request.form.get("filename")}.pdf")
+    request.files["file"].save(f'pdfs/{request.form.get("filename")}.pdf')
         
     if request.method == 'POST':
         # Get form data
@@ -40,7 +40,7 @@ def get_data():
             course = data.get('course')
             section = data.get('section')
 
-        test.date(filename, course, section)
+        test.runAll(f'{request.form.get("filename")}.pdf', course, int(section))
 
     return 'Invalid request method'
 
