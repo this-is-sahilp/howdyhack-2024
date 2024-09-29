@@ -6,6 +6,14 @@ def convertTXT(): # does all the pdf to text conversion
 
 
     def openPDF(inputPDF):
+        
+        newFile = ''
+        if inputPDF.endswith(".html"):
+            htmlToPDF(inputPDF)
+            newFile = inputPDF[0:-5]
+            newFile  = newFile + '.pdf'
+            inputPDF = newFile
+        
         with pdfplumber.open(f'pdfs/{inputPDF}') as pdf:
             text = ""
 
@@ -32,7 +40,7 @@ def convertTXT(): # does all the pdf to text conversion
         files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f))]
 
         for file in files:
-            if not file.endswith(".pdf"):
+            if (not file.endswith(".pdf")) or (not file.endswith(".html")):
                 files.remove(file)
 
         # Print the list of files
@@ -44,8 +52,6 @@ def convertTXT(): # does all the pdf to text conversion
     # openPDF('input.pdf')
 
     readDir()
-
-
 
 def OR(input_prompt): #does the ai formatting
     from openai import OpenAI
@@ -73,6 +79,16 @@ def OR(input_prompt): #does the ai formatting
 
     return (completion.choices[0].message.content)
 
+def htmlToPDF(file):
+    
+    import pdfkit 
+    
+    newFile = file[0:-5]
+    newFile  = newFile
+    
+    pdfkit.from_file(f'pdfs/{file}', f'pdfs/{newFile}.pdf') 
+    
+    
 
 def txtToStr(file_path): # converts the .txt file to a string
     # Open the file and read its contents
@@ -83,7 +99,6 @@ def txtToStr(file_path): # converts the .txt file to a string
     print(file_contents)
 
     return file_contents
-
 
 def date_format(file_path, section, className):
     fileString = txtToStr(file_path)
@@ -164,13 +179,13 @@ def date_format(file_path, section, className):
     
         FORMAT THE FOLLOWING IN AN ICS FILE FORMAT: 
         
-        START: 08/19/2024
-        END: 12/23/2024
+        START: 08/19/2024 - Monday
+        END: 12/13/2024 - Friday
         Time Zone: CST
         Make sure AM and PM is correct
         In the summary category, include the class name: {className}. For instance, '{className} - Lecture' should be the summary.
         
-        Remove anything aside from the ical data. I should be able to put the exact output in an ics file.
+        Remove anything aside from the ical data. I should be able to put the exact output in an ics file. Do not have ANYTHING aside from just the data. remove any ``` or any other words. If there is no specified time, make it all day. MAKE SURE THE DATES ARE CORRECT.
         
         
         
@@ -182,26 +197,22 @@ def date_format(file_path, section, className):
     
     return cal
 
-
 def strToICS(file_path, className, section):
     # Open the file in write mode
     text = date_format(file_path, section, className)
     with open(f'cals/{className}.ics', 'w') as file:
         # Write the string to the file
         file.write(text)
-        
-    
-    
+          
 def date(file, className, section):
     
     strToICS(file, className, section)
     
 
 
+convertTXT()
 
-
-
-date("outputs/input.txt", "Math 151", 546)
+# date("outputs/geog205.txt", "Geog 205", 546)
 
 # all outputs, all classes, all sections
 
