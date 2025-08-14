@@ -3,7 +3,7 @@
 
 Simplify the transition to college and the beginning of every semester by using AggieAce to convert your PDF syllabus to an importable calendar using flagship machine learning models!
 
-This project was HowdyHack 2024, a 24-hour hackathon at Texas A&M University.
+This project was done at HowdyHack 2024, a 24-hour hackathon at Texas A&M University. It won the award for 'Best Aggie Hack' and we wish to continue building upon it.
 
 ## Inspiration
 Time management is one of the key skills every college student needs to have to ensure success in class and a stress-free life outside of class. Every semester, students across campus encounter the redundant issue of manually creating your semester calendar which kills a lot of time during your first week.
